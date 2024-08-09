@@ -80,20 +80,20 @@ const StarrySky = function () {
         console.error('初始化失败，必须传入Canvas元素');
       }
     },
-    //设置星空背景颜色
+    
     setSkyColor: function (sky_color = "black") {
       canvasElement.style.backgroundColor = sky_color;
     },
-    //设置星星半径大小
+    
     setStarRadius: function (star_radius = 1) {
       starRadius = star_radius;
     },
-    //设置焦距等级
+    
     setFocalDistanceLevel: function (focal_distance_level = 0.4) {
       focalDistanceLevel = focal_distance_level;
       focalDistance = canvasWidth * focalDistanceLevel
     },
-    //设置星星数量等级
+    
     setStarCountLevel: function (star_count_level = 0.2) {
       starCountLevel = star_count_level;
       const starCount2 = Math.ceil(canvasWidth * starCountLevel);
@@ -112,7 +112,7 @@ const StarrySky = function () {
       }
       starCount = Math.ceil(canvasWidth * starCountLevel);
     },
-    //设置星星速度等级
+    
     setStarSpeedLevel: function (star_speed_level = 0.0005) {
       starSpeedLevel = star_speed_level
     },
@@ -133,12 +133,12 @@ const StarrySky = function () {
         }
       }
     },
-    //渲染
+    
     render: function () {
       const starSpeed = canvasWidth * focalDistanceLevel * starSpeedLevel;
-      //清空画布
+      
       canvasContext.clearRect(0, 0, canvasWidth, canvasHeight);
-      //计算位置
+      
       for (let i = 0; i < starList.length; i++) {
         const star = starList[i];
         const star_x = (star["x"] - canvasWidth / 2) * (focalDistance / star["z"]) + canvasWidth / 2;
@@ -168,7 +168,7 @@ const StarrySky = function () {
         self.render();
       });
     },
-    //销毁
+
     destroy: function () {
       window.cancelAnimationFrame(rAF);
       starList = [];
@@ -176,7 +176,7 @@ const StarrySky = function () {
       canvasElement.width = 0;
       canvasElement.height = 0;
     },
-    //防抖
+
     debounce: function (func, time = 200) {
       let timeId;
       return function () {
@@ -188,7 +188,7 @@ const StarrySky = function () {
         }, time);
       }
     },
-    //节流
+
     throttle: function (func, time = 200) {
       let timeId = null;
       let pre = 0;
