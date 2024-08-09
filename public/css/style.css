@@ -3,6 +3,7 @@
   padding: 0;
   font-size: 14px;
   box-sizing: content-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 html,
@@ -75,7 +76,7 @@ body {
   padding: 0 28px;
   letter-spacing: 1px;
   text-align: center;
-  font-family: cursive;
+  font-family:'宋体';
   line-height: 28px;
 }
 
