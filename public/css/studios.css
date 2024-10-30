@@ -1,0 +1,43 @@
+.service_k {
+width: 1680px;
+opacity: 0.80;
+    margin: auto;
+}
+
+.member img {
+    border-radius: 15px;
+}
+.member {width: 23.3%;
+    float: left;
+    padding: 10px;}
+.member a {text-decoration: none;text-align: center;display: block;-webkit-transition: all 0.5s ease-in-out;-moz-transition: all 0.5s ease-in-out;transition: all 0.5s ease-in-out;-webkit-transform: rotate(0deg);-moz-transform: rotate(0deg);transform: rotate(0deg);font-size: 28px;color: #e6e6e6;padding-top: 30px;border-radius: 8px;padding-left: 35px;padding-right: 35px;background-color: #1f2233;background-repeat: repeat-y;background-position: right;height: 350px;}
+.member a:hover {text-decoration: none;
+    background-color: #2affda;
+    font-size: 34px;
+    color: #000;}
+
+.service_k font {
+font-size: 14px;
+}
+
+@media screen and (max-width: 1800px) {
+.service_k {width: 1390px;}
+.member a {height: 321px;}
+
+.member {width:23.1%;
+    float: left;
+    padding: 10px;}
+
+@media screen and (max-width: 1330px) {
+.service_k {width: 1160px;}
+}
+
+@media screen and (max-width: 1260px) {
+.service_k {width: 920px;}
+.member {
+    width: 31%;
+    float: left;
+    padding: 10px;
+}
+}
+}

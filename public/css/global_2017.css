@@ -1,0 +1,29 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*通用页面样式、顶部*/
+* { margin:0; padding:0; list-style-image: none;list-style-type: none;}
+html{-webkit-text-size-adjust:none;}
+body {background-color: #101425;font-family: "微软雅黑";}
+img { border:none;}
+.fix {clear:both;height: 1px;font-size: 0px;}
+
+.copyright_k {width: 1740px;margin-right: auto;margin-left: auto;padding-top: 20px;}
+.copyright {border-top-width: 1px;border-top-style: solid;border-top-color: #21232d;height: 70px;padding-top: 35px;margin-right: 30px;margin-left: 30px;}
+.copyright_y {height: 40px;padding-top: 40px;text-align: center;}
+.hda {height: 30px;}
+.hda a {display: block;height: 30px;background-size: 30px 30px;background-repeat: no-repeat;-webkit-transition: all 0.3s ease-in-out;-moz-transition: all 0.3s ease-in-out;transition: all 0.3s ease-in-out;-webkit-transform: rotate(0deg);-moz-transform: rotate(0deg);transform: rotate(0deg);background-position: left center;color: #666;font-family: "微软雅黑";font-size: 12px;padding-left: 36px;text-decoration: none;line-height: 16px;}
+.hda a:hover {text-decoration: none;opacity: 0.7;}
+
+@media screen and (max-width: 1800px) {
+.copyright_k {width: 1450px;margin-right: auto;margin-left: auto;padding-top: 20px;}
+}
+@media screen and (max-width: 1510px) {
+.copyright_k {width: 1270px;margin-right: auto;margin-left: auto;padding-top: 20px;}
+}
+@media screen and (max-width: 1330px) {
+.copyright_k {width: 1220px;margin-right: auto;margin-left: auto;padding-top: 20px;}
+}
+@media screen and (max-width: 1260px) {
+.copyright_k {width: 980px;margin-right: auto;margin-left: auto;padding-top: 20px;}
+}
