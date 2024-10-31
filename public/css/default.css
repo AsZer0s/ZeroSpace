@@ -1,7 +1,5 @@
 @charset "utf-8";
-/* CSS Document */
 
-/*通用页面样式、顶部*/
 * { margin:0; padding:0; list-style-image: none;list-style-type: none;}
 html{-webkit-text-size-adjust:none;}
 body {background-color: #101425;font-family: "微软雅黑";}

@@ -1,15 +1,45 @@
 .service_k {
-width: 1680px;
-opacity: 0.80;
+    width: 1680px;
+    opacity: 0.80;
     margin: auto;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .member img {
     border-radius: 15px;
 }
-.member {width: 23.3%;
-    float: left;
-    padding: 10px;}
+
+.member {
+    width: 23.3%;
+    padding: 10px;
+    cursor: move;
+    transition: transform 0.2s ease, border 0.2s ease;
+    border-radius: 8px;
+}
+
+.drag-shadow {
+    opacity: 0.5;
+    transform: scale(1.05);
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.drag-hover {
+    border: 2px dashed #1e90ff;
+    background-color: #f0f8ff;
+    transform: scale(1.02);
+}
+
+.placeholder {
+    width: 23.3%;
+    background-color: #8fb0d1;
+    border: 2px dashed #1e90ff;
+    height: 350px;
+    border-radius: 8px;
+    transition: height 0.2s ease;
+    margin: 10px;
+}
+
 .member a {text-decoration: none;text-align: center;display: block;-webkit-transition: all 0.5s ease-in-out;-moz-transition: all 0.5s ease-in-out;transition: all 0.5s ease-in-out;-webkit-transform: rotate(0deg);-moz-transform: rotate(0deg);transform: rotate(0deg);font-size: 28px;color: #e6e6e6;padding-top: 30px;border-radius: 8px;padding-left: 35px;padding-right: 35px;background-color: #1f2233;background-repeat: repeat-y;background-position: right;height: 350px;}
 .member a:hover {text-decoration: none;
     background-color: #2affda;
